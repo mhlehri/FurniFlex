@@ -1,0 +1,5 @@
+.categoryImg img:hover {
+  overflow: hidden;
+  transition: all 0.3s linear;
+  transform: scale(1.2);
+}
