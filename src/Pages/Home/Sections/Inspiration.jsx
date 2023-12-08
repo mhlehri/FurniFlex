@@ -1,11 +1,14 @@
+import Slider from "./Slider";
+
 const Inspiration = () => {
   return (
-    <div>
-      <div className=" lg:w-1/3">
+    <div className="h-[670px] flex items-center overflow-hidden gap-10">
+      <div className="bg-[#FCF8F3] w-screen absolute left-0 h-[670px] -z-40"></div>
+      <div className=" lg:w-1/3 lg:space-y-5">
         <h1 className="lg:text-[40px] font-bold">
           50+ Beautiful rooms inspiration
         </h1>
-        <p>
+        <p className="text-[#616161]">
           Our designer already made a lot of beautiful prototipe of rooms that
           inspire you
         </p>
@@ -13,6 +16,7 @@ const Inspiration = () => {
           Explore More
         </button>
       </div>
+      <Slider />
     </div>
   );
 };

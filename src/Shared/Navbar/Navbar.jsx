@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="py-6 flex items-center justify-between">
       {/* logo */}
       <div className="flex gap-3">
-        <img src="public/assets/Logo.png" alt="" />{" "}
+        <img src="/src/assets/Logo.png" alt="" />{" "}
         <h4 className="text-4xl font-bold">FurniFlex</h4>
       </div>
 

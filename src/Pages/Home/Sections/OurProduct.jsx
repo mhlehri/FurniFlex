@@ -9,7 +9,7 @@ import image8 from "/src/assets/image8.png";
 import Card from "./../../../Shared/Card/Card";
 const OurProduct = () => {
   return (
-    <div>
+    <div className="mb-20">
       <h1 className="lg:text-[40px] font-bold text-center mb-5">
         Our Products
       </h1>
