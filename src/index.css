@@ -7,3 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+.cardHover {
+  visibility: hidden;
+}
+.card:hover .cardHover {
+  visibility: visible;
+}

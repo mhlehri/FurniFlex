@@ -1,19 +1,19 @@
 import "./HomeSection.css";
-import bedroom from "./../../../../public/assets/bedroom.png";
-import living from "./../../../../public/assets/living.png";
-import dining from "./../../../../public/assets/dining.png";
+import bedroom from "/src/assets/bedroom.png";
+import living from "/src/assets/living.png";
+import dining from "/src/assets/dining.png";
 const Category = () => {
   return (
     <div className="my-16 text-center">
-      <h1 className="text-3xl font-bold">Browse The Range</h1>
-      <p className="text-xl">
+      <h1 className="lg:text-3xl font-bold">Browse The Range</h1>
+      <p className="lg:text-xl mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
       <div className="flex gap-8 justify-center py-6">
         <div className="categoryImg ">
           <div className="overflow-hidden">
             <img
-              className="rounded-lg cursor-pointer"
+              className="rounded-lg overflow-hidden cursor-pointer hover:scale-105 hover:rounded-lg"
               src={dining}
               alt="dining"
             />

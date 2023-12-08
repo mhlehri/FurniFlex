@@ -1,5 +1,17 @@
 .categoryImg img:hover {
   overflow: hidden;
-  transition: all 0.3s linear;
-  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.99);
+}
+.shareGallery {
+  transition: all 0.1s ease-in-out;
+  animation: moving 5s infinite;
+}
+@keyframes moving {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -180%;
+  }
 }
