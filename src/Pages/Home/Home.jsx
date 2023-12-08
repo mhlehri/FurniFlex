@@ -12,7 +12,6 @@ const Home = () => {
       <OurProduct />
       <Inspiration />
       <Share />
-      <div className="h-[3000px]"></div>
     </div>
   );
 };

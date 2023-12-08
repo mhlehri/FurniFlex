@@ -9,7 +9,7 @@ import image8 from "/src/assets/image8.png";
 import Card from "./../../../Shared/Card/Card";
 const OurProduct = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20 text-center">
       <h1 className="lg:text-[40px] font-bold text-center mb-5">
         Our Products
       </h1>
@@ -71,6 +71,9 @@ const OurProduct = () => {
           dis="Rp 3.500.000"
         />
       </div>
+      <button className="font-bold lg:py-3 hover:scale-95 duration-300 lg:px-10 text-[#B88E2F] hover:text-white hover:bg-[#B88E2F] bg-transparent border-2 my-8  border-[#B88E2F]">
+        Show More
+      </button>
     </div>
   );
 };

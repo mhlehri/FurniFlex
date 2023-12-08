@@ -4,14 +4,17 @@
   transform: scale(0.99);
 }
 .shareGallery {
-  transition: all 0.1s ease-in-out;
-  animation: moving 5s infinite;
+  transition: all 0.7s linear;
+  animation: moving 20s infinite;
 }
 @keyframes moving {
   0% {
     margin-left: 0;
   }
+  90% {
+    margin-left: -200%;
+  }
   100% {
-    margin-left: -180%;
+    margin-left: 0%;
   }
 }

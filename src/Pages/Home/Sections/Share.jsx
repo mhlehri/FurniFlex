@@ -15,7 +15,7 @@ const Share = () => {
         <h4 className="lg:text-xl font-semibold">Share your setup with</h4>
         <h2 className="lg:text-[40px] font-bold">#FurniFlex</h2>
       </div>
-      <div className="flex   gap-20 overflow-hidden items-center">
+      <div className="flex   gap-10 overflow-hidden items-center shareGallery">
         <img src={gallery1} className="max-w-sm h-auto" alt="" />
         <img src={gallery2} className="max-w-sm h-auto" alt="" />
         <img src={gallery3} className="max-w-sm h-auto" alt="" />

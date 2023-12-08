@@ -15,7 +15,7 @@ const Slider = () => {
       <div>
         <button
           onClick={nextSlider}
-          className="nex absolute right-2 top-1/3 z-50"
+          className="nex absolute right-2 top-1/2 z-50 "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,24 +34,90 @@ const Slider = () => {
         </button>
       </div>
       <div
-        className="transition ease-out duration-300 flex  gap-6"
-        style={{ transform: `translateX(-${currentSlider * 40}%)` }}
+        className="transition ease-out duration-300 flex  gap-6 "
+        style={{ transform: `translateX(-${currentSlider * 41}%)` }}
       >
-        <img
-          src={slide1}
-          className={`${currentSlider === 0 ? "h-[580px]" : "h-[480px]"}`}
-          alt=""
-        />
-        <img
-          src={slide2}
-          className={`${currentSlider === 1 ? "h-[580px]" : "h-[480px]"}`}
-          alt=""
-        />
-        <img
-          src={slide3}
-          className={`${currentSlider === 2 ? "h-[580px]" : "h-[480px]"}`}
-          alt=""
-        />
+        <div
+          className={`${
+            currentSlider === 0 ? "h-[580px] " : "h-[480px]"
+          } min-w-max relative`}
+        >
+          <img src={slide1} className="w-full h-full" alt="" />
+          <div
+            className={`absolute bottom-6 left-6 bg-[#FFFFFFB8] p-14 ${
+              currentSlider === 0 ? "block" : "hidden"
+            } `}
+          >
+            <h4 className="flex items-center gap-2">
+              01{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#616161" />
+              </svg>{" "}
+              Bed Room
+            </h4>
+            <h2 className="text-2xl font-semibold mt-1">Inner Peace</h2>
+          </div>
+        </div>
+        <div
+          className={`${
+            currentSlider === 1 ? "h-[580px]" : "h-[480px]"
+          } min-w-max relative`}
+        >
+          <img src={slide2} className="w-full h-full" alt="" />
+          <div
+            className={`absolute bottom-6 left-6 bg-[#FFFFFFB8] p-14 ${
+              currentSlider === 1 ? "block" : "hidden"
+            } `}
+          >
+            <h4 className="flex items-center gap-2">
+              02{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#616161" />
+              </svg>{" "}
+              Bed Room
+            </h4>
+            <h2 className="text-2xl font-semibold mt-1">Inner Peace</h2>
+          </div>
+        </div>
+        <div
+          className={`${
+            currentSlider === 2 ? "h-[580px]" : "h-[480px]"
+          } min-w-max relative`}
+        >
+          <img src={slide3} className="w-full h-full" alt="" />
+          <div
+            className={`absolute bottom-6 left-6 bg-[#FFFFFFB8] p-14 ${
+              currentSlider === 2 ? "block" : "hidden"
+            } `}
+          >
+            <h4 className="flex items-center gap-2">
+              03{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#616161" />
+              </svg>{" "}
+              Bed Room
+            </h4>
+            <h2 className="text-2xl font-semibold mt-1">Inner Peace</h2>
+          </div>
+        </div>
       </div>
     </div>
   );
