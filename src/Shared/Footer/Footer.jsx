@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="h-[450px] border-t-2 mt-12">
+    <div className="h-[450px] border-t-2">
       <div className="flex gap-10 justify-between items-center w-full h-full">
         <div className="space-y-6">
           <h1 className="text-2xl font-bold">FurniFlex</h1>
