@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Card = ({ image, name, price, type, dis }) => {
   return (
-    <Link className="card">
+    <Link className="card" to="/details">
       <div className="relative cardImgContainer">
         <div className="bg-[#3A3A3A]/80 cardHover absolute top-0 left-0  w-full h-full">
           <div className="bg-red-400 absolute w-12 h-12 rounded-full leading-[48px] text-white text-center font-medium top-3 right-3">

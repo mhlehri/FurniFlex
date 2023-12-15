@@ -28,6 +28,10 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: "/blog",
+        element: <Contact />,
+      },
+      {
         path: "/details",
         element: <ProductDetails />,
       },
