@@ -1,4 +1,5 @@
 import Card from "../../Shared/Card/Card";
+import Cover from "../../Shared/Cover/Cover";
 import image1 from "/src/assets/image1.png";
 import image2 from "/src/assets/image2.png";
 import image3 from "/src/assets/image3.png";
@@ -7,20 +8,12 @@ import image5 from "/src/assets/image5.png";
 import image6 from "/src/assets/image6.png";
 import image7 from "/src/assets/image7.png";
 import image8 from "/src/assets/image8.png";
-import cover from "/src/assets/cover.png";
+
 const Shop = () => {
   return (
     <div>
       {/* cover */}
-      <div className="relative text-center">
-        <img src={cover} className="w-full h-full" alt="cover" />
-        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-          <h1 className="text-5xl font-medium mb-2">Shop</h1>
-          <h5>
-            <span className="font-medium">Home &gt;</span> Shop
-          </h5>
-        </div>
-      </div>
+      <Cover title="Shop" />
 
       {/* filter section */}
 

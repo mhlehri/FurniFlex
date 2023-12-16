@@ -1,8 +1,7 @@
 import img1 from "/src/assets/details5.png";
-
-const ProductDetails = () => {
+const DetailsUp = () => {
   return (
-    <div className="">
+    <div>
       <h5 className="bg-[#F9F1E7] p-8">
         Home &gt; Shop &gt; <span className="font-medium">product</span>
       </h5>
@@ -10,7 +9,7 @@ const ProductDetails = () => {
         <div className="bg-[#F9F1E7] mt-11 w-[420px] flex items-center h-[500px] rounded-lg">
           <img src={img1} alt="sofa" className=" scale-110" />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 space-y-3">
           <h1 className="text-[42px]">Asgaard sofa</h1>
           <h4 className="text-2xl text-zinc-400">Rs. 250,000.00</h4>
           <p className="">
@@ -25,7 +24,7 @@ const ProductDetails = () => {
 
           {/* size */}
           <p>Size</p>
-          <div>
+          <div className="space-x-3">
             <label
               htmlFor="L"
               className="px-4 py-3 rounded-lg text-xs inline-block bg-[#F9F1E7]"
@@ -72,15 +71,16 @@ const ProductDetails = () => {
 
           {/* buttons */}
           <div className="btn space-x-6 text-xl">
-            <span className="py-3 px-6 border-2 inline-block border-black rounded-lg ">
+            <span className="py-3 px-3 border-2 inline-block border-black rounded-lg ">
               <button>-</button>
               <input
+                disabled
+                defaultValue={1}
                 type="number"
-                inputMode="numeric"
-                pattern="[0-9]*"
+                max={5}
                 name=""
                 id=""
-                className="w-5 "
+                className="w-5 mx-3 outline-none text-center disabled:bg-white"
               />
               <button>+</button>
             </span>
@@ -103,4 +103,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default DetailsUp;
