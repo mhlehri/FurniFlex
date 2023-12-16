@@ -1,4 +1,5 @@
 import Cover from "../../Shared/Cover/Cover";
+import Services from "../../Shared/Services/Services";
 
 const Contact = () => {
   return (
@@ -129,6 +130,9 @@ const Contact = () => {
           </button>
         </form>
       </div>
+
+      {/* services */}
+      <Services />
     </div>
   );
 };

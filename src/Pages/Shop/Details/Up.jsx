@@ -1,5 +1,7 @@
+import { useState } from "react";
 import img1 from "/src/assets/details5.png";
 const DetailsUp = () => {
+  const [qty, setQty] = useState(1);
   return (
     <div>
       <h5 className="bg-[#F9F1E7] p-8">
@@ -72,17 +74,36 @@ const DetailsUp = () => {
           {/* buttons */}
           <div className="btn space-x-6 text-xl">
             <span className="py-3 px-3 border-2 inline-block border-black rounded-lg ">
-              <button>-</button>
+              <button
+                onClick={() => {
+                  if (qty === 1) return;
+                  else {
+                    setQty(qty - 1);
+                    console.log();
+                  }
+                }}
+              >
+                -
+              </button>
               <input
                 disabled
-                defaultValue={1}
                 type="number"
+                value={qty}
                 max={5}
-                name=""
-                id=""
+                name="qty"
                 className="w-5 mx-3 outline-none text-center disabled:bg-white"
               />
-              <button>+</button>
+              <button
+                onClick={() => {
+                  if (qty === 5) return;
+                  else {
+                    setQty(qty + 1);
+                    console.log();
+                  }
+                }}
+              >
+                +
+              </button>
             </span>
             <button className="py-3 px-6 border-2 border-black rounded-lg ">
               Add To Cart
