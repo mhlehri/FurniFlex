@@ -6,7 +6,7 @@ const Contact = () => {
       <Cover title="Contact" />
 
       {/* title & subtitle */}
-      <div className="my-5 space-y-3">
+      <div className="space-y-3 mt-20">
         <h1 className="text-4xl font-semibold text-center">
           Get In Touch With Us
         </h1>
@@ -18,9 +18,9 @@ const Contact = () => {
       </div>
 
       {/* contact info & form container */}
-      <div>
+      <div className="flex justify-around py-20">
         {/* contact info */}
-        <div>
+        <div className="space-y-10 px-5 max-w-xs">
           <div className="flex gap-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,46 @@ const Contact = () => {
           </div>
         </div>
         {/* contact form */}
-        <form action=""></form>
+        <form className="w-1/3">
+          <label htmlFor="name">Your name</label>
+          <input
+            required
+            type="text"
+            id="name"
+            name="name"
+            placeholder="abc"
+            className="px-5 py-3 my-2 rounded-lg outline-[#B88E2F] border-2 w-full"
+          />
+          <label htmlFor="email">Your email</label>
+          <input
+            required
+            type="text"
+            id="email"
+            name="email"
+            placeholder="abc@example.com"
+            className="px-5 py-3 my-2 rounded-lg outline-[#B88E2F] border-2 w-full"
+          />
+          <label htmlFor="sub">Subject</label>
+          <input
+            type="text"
+            id="sub"
+            name="sub"
+            placeholder="This is an optional"
+            className="px-5 py-3 my-2 rounded-lg outline-[#B88E2F] border-2 w-full"
+          />
+          <label htmlFor="message">Message</label>
+          <textarea
+            required
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Hi! i’d like to ask about"
+            className="px-5 py-3 my-2 rounded-lg outline-[#B88E2F] border-2 w-full"
+          />
+          <button className="font-bold lg:py-3 hover:scale-95 duration-300 lg:px-10 text-white bg-[#B88E2F]">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
