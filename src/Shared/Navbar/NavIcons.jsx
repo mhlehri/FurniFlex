@@ -125,7 +125,9 @@ const NavIcons = () => {
             <Link to="/cart" className="px-6 py-3 rounded-3xl border-2">
               Cart
             </Link>
-            <button className="px-6 py-3 rounded-3xl border-2">Checkout</button>
+            <Link to="/checkout" className="px-6 py-3 rounded-3xl border-2">
+              Checkout
+            </Link>
             <button className="px-6 py-3 rounded-3xl border-2">
               Comparison
             </button>
