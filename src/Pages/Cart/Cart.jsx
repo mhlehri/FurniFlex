@@ -13,7 +13,7 @@ const Cart = () => {
           <table className="w-full rounded-lg text-center">
             <thead className="bg-[#F9F1E7] ">
               <tr className="rounded-lg">
-                <th className="p-4">Product</th>
+                <th className="px-32">Product</th>
                 <th className="p-4">Price</th>
                 <th className="p-4">Quantity</th>
                 <th className="p-4">Subtotal</th>
@@ -25,7 +25,7 @@ const Cart = () => {
                 <td className="flex items-center gap-3 p-5 whitespace-nowrap">
                   <img
                     className="rounded-lg bg-[#F9F1E7]"
-                    src="/assets/details3.png"
+                    src="/src/assets/details3.png"
                     width={100}
                     height={100}
                     alt=""
