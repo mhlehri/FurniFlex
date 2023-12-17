@@ -100,9 +100,12 @@ const Cart = () => {
               <span className="text-[#B88E2F] text-xl">Rs. 250,000.00</span>
             </p>
           </div>
-          <button className="px-6 py-3 hover:scale-95 duration-300 rounded-xl border-2 border-black">
+          <Link
+            to="/checkout"
+            className="px-6 py-3 inline-block hover:scale-95 duration-300 rounded-xl border-2 border-black"
+          >
             Checkout
-          </button>
+          </Link>
         </div>
       </div>
       <Services />
