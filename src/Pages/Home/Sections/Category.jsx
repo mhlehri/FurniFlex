@@ -1,7 +1,7 @@
 import "./HomeSection.css";
-import bedroom from "/src/assets/bedroom.png";
-import living from "/src/assets/living.png";
-import dining from "/src/assets/dining.png";
+import bedroom from "/assets/bedroom.png";
+import living from "/assets/living.png";
+import dining from "/assets/dining.png";
 const Category = () => {
   return (
     <div className="my-16 text-center">

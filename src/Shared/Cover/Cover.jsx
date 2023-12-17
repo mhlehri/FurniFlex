@@ -1,5 +1,5 @@
-import cover from "/src/assets/cover.png";
-import logo from "/src/assets/Logo.png";
+import cover from "/assets/cover.png";
+import logo from "/assets/Logo.png";
 const Cover = ({ title }) => {
   return (
     <div className="relative text-center">

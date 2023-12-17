@@ -1,6 +1,6 @@
-import slide1 from "/src/assets/slide1.png";
-import slide2 from "/src/assets/slide2.png";
-import slide3 from "/src/assets/slide3.png";
+import slide1 from "/assets/slide1.png";
+import slide2 from "/assets/slide2.png";
+import slide3 from "/assets/slide3.png";
 import { useState } from "react";
 const Slider = () => {
   const [currentSlider, setCurrentSlider] = useState(0);

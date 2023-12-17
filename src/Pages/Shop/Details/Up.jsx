@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img1 from "/src/assets/details5.png";
+import img1 from "/assets/details5.png";
 const DetailsUp = () => {
   const [qty, setQty] = useState(1);
   return (

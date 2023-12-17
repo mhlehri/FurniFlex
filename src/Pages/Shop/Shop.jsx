@@ -1,13 +1,13 @@
 import Card from "../../Shared/Card/Card";
 import Cover from "../../Shared/Cover/Cover";
-import image1 from "/src/assets/image1.png";
-import image2 from "/src/assets/image2.png";
-import image3 from "/src/assets/image3.png";
-import image4 from "/src/assets/image4.png";
-import image5 from "/src/assets/image5.png";
-import image6 from "/src/assets/image6.png";
-import image7 from "/src/assets/image7.png";
-import image8 from "/src/assets/image8.png";
+import image1 from "/assets/image1.png";
+import image2 from "/assets/image2.png";
+import image3 from "/assets/image3.png";
+import image4 from "/assets/image4.png";
+import image5 from "/assets/image5.png";
+import image6 from "/assets/image6.png";
+import image7 from "/assets/image7.png";
+import image8 from "/assets/image8.png";
 import Services from "./../../Shared/Services/Services";
 
 const Shop = () => {

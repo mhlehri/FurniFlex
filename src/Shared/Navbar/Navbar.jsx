@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="py-6 flex items-center justify-between px-2">
         {/* logo */}
         <div className="flex gap-3 items-center">
-          <img src="/src/assets/Logo.png" alt="" />{" "}
+          <img src="/assets/Logo.png" alt="" />{" "}
           <h4 className="text-4xl font-bold md:block hidden">FurniFlex</h4>
           <button
             onClick={() => {

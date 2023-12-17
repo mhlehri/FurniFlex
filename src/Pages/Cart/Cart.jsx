@@ -25,7 +25,7 @@ const Cart = () => {
                 <td className="flex items-center gap-3 p-5 whitespace-nowrap">
                   <img
                     className="rounded-lg bg-[#F9F1E7]"
-                    src="/src/assets/details3.png"
+                    src="/assets/details3.png"
                     width={100}
                     height={100}
                     alt=""

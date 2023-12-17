@@ -1,12 +1,12 @@
-import gallery1 from "/src/assets/Gallery1.png";
-import gallery2 from "/src/assets/Gallery2.png";
-import gallery3 from "/src/assets/Gallery3.png";
-import gallery4 from "/src/assets/Gallery4.png";
-import gallery5 from "/src/assets/Gallery5.png";
-import gallery6 from "/src/assets/Gallery6.png";
-import gallery7 from "/src/assets/Gallery7.png";
-import gallery8 from "/src/assets/Gallery8.png";
-import gallery9 from "/src/assets/Gallery9.png";
+import gallery1 from "/assets/Gallery1.png";
+import gallery2 from "/assets/Gallery2.png";
+import gallery3 from "/assets/Gallery3.png";
+import gallery4 from "/assets/Gallery4.png";
+import gallery5 from "/assets/Gallery5.png";
+import gallery6 from "/assets/Gallery6.png";
+import gallery7 from "/assets/Gallery7.png";
+import gallery8 from "/assets/Gallery8.png";
+import gallery9 from "/assets/Gallery9.png";
 
 const Share = () => {
   return (
