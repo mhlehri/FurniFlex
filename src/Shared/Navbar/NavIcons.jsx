@@ -84,12 +84,14 @@ const NavIcons = () => {
       <div
         className={`bg-white min-h-[80px] ${
           open
-            ? "right-0 ease-in-out duration-500 w-1/4 scale-1 opacity-100 "
+            ? "right-0 ease-in-out duration-500 w-[500px] scale-1 opacity-100 "
             : "right-0 w-0 ease-in-out duration-500 scale-0 opacity-0"
         } z-[200] absolute top-0 shadow-lg shadow-slate-500`}
       >
         <div
-          className={`${open ? "block" : "hidden"} p-5 overflow-hidden w-full`}
+          className={`${
+            open ? "block" : "hidden"
+          } px-5 pt-5 overflow-hidden w-full`}
         >
           <svg
             onClick={() => {
@@ -119,6 +121,15 @@ const NavIcons = () => {
           <p className="flex justify-between mt-20">
             Subtotal <span className="text-[#B88E2F]">Rs. 520,000.00</span>
           </p>
+          <div className="flex justify-center py-4 mt-3 border-t-2 space-x-3">
+            <Link to="/cart" className="px-6 py-3 rounded-3xl border-2">
+              Cart
+            </Link>
+            <button className="px-6 py-3 rounded-3xl border-2">Checkout</button>
+            <button className="px-6 py-3 rounded-3xl border-2">
+              Comparison
+            </button>
+          </div>
         </div>
       </div>
     </ul>

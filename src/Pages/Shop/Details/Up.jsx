@@ -73,7 +73,7 @@ const DetailsUp = () => {
 
           {/* buttons */}
           <div className="btn space-x-6 text-xl">
-            <span className="py-3 px-3 border-2 inline-block border-black rounded-lg ">
+            <span className="py-3 hover:scale-95 duration-300 px-3 border-2 inline-block border-black rounded-lg ">
               <button
                 onClick={() => {
                   if (qty === 1) return;
@@ -105,10 +105,10 @@ const DetailsUp = () => {
                 +
               </button>
             </span>
-            <button className="py-3 px-6 border-2 border-black rounded-lg ">
+            <button className="py-3 hover:scale-95 duration-300  px-6 border-2 border-black rounded-lg ">
               Add To Cart
             </button>
-            <button className="py-3 px-6 border-2 border-black rounded-lg ">
+            <button className="py-3 hover:scale-95 duration-300 px-6 border-2 border-black rounded-lg ">
               + Compare
             </button>
           </div>
