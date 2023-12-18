@@ -67,7 +67,7 @@ const Slider = () => {
                 currentSlider === inx
                   ? "opacity-1 duration-700 transition"
                   : "opacity-0"
-              } `}
+              }`}
             >
               <h4 className="flex items-center md:gap-2 text-sm ">
                 {"0" + (inx + 1)}

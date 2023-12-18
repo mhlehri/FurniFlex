@@ -53,8 +53,8 @@ const Navbar = () => {
           className={`flex flex-wrap text-center justify-center gap-4 ${
             open
               ? "duration-300 h-fit bg-white opacity-1 "
-              : "h-0 duration-300 opacity-0  scale-0"
-          }  font-medium md:hidden p-4 absolute ease-out z-[20000] w-full`}
+              : "h-0 duration-300 opacity-0 scale-0"
+          } font-medium md:hidden p-4 absolute ease-out z-[20000] w-full`}
         >
           <NavLink
             onClick={() => {

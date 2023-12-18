@@ -157,19 +157,19 @@ const OurProduct = () => {
         />
       </div>
       <div className="my-8 space-x-3">
-        <button className="hidden font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg   bg-[#F9F1E7] ">
+        <button className="hidden font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg  bg-[#F9F1E7] ">
           Prev
         </button>
-        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg   bg-[#F9F1E7] ">
+        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg  bg-[#F9F1E7] ">
           1
         </button>
-        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg   bg-[#F9F1E7] ">
+        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg  bg-[#F9F1E7] ">
           2
         </button>
-        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg   bg-[#F9F1E7] ">
+        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg  bg-[#F9F1E7] ">
           3
         </button>
-        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg   bg-[#F9F1E7] ">
+        <button className="font-bold hover:scale-95 duration-300 lg:py-3 lg:px-5 rounded-lg  bg-[#F9F1E7] ">
           Next
         </button>
       </div>

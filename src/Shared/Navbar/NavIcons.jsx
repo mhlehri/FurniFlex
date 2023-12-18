@@ -101,7 +101,7 @@ const NavIcons = () => {
               fill="#9F9F9F"
             />
           </svg>
-          <h1 className="lg:text-2xl font-semibold  w-4/5 border-b-2 pb-4">
+          <h1 className="lg:text-2xl font-semibold w-4/5 border-b-2 pb-4">
             Shopping Cart
           </h1>
           <p className="flex justify-between mt-20">
