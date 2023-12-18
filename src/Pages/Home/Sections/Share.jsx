@@ -10,7 +10,7 @@ import gallery9 from "/assets/Gallery9.png";
 
 const Share = () => {
   return (
-    <div className="mt-20 overflow-hidden">
+    <div className="mt-20 overflow-hidden block">
       <div className="space-y-2 text-center">
         <h4 className="lg:text-xl font-semibold">Share your setup with</h4>
         <h2 className="lg:text-[40px] font-bold">#FurniFlex</h2>

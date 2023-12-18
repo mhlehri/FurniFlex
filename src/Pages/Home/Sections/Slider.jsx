@@ -9,16 +9,20 @@ const Slider = () => {
     { img: slide1, tags: "Bed room" },
     { img: slide2, tags: "Living room" },
     { img: slide3, tags: "Drawing room" },
+    { img: slide1, tags: "Drawing room" },
+    { img: slide2, tags: "Drawing room" },
+    { img: slide3, tags: "Drawing room" },
+    { img: slide1, tags: "Drawing room" },
   ];
 
   const nextSlider = () => {
-    if (currentSlider === 2) {
+    if (currentSlider === sliders.length - 1) {
       return setCurrentSlider(0);
     }
     return setCurrentSlider(currentSlider + 1);
   };
   return (
-    <div className={`w-2/3 relative overflow-hidden`}>
+    <div className=" sm:w-2/3 relative overflow-hidden">
       {/* arrow */}
       <div>
         <button
@@ -44,29 +48,32 @@ const Slider = () => {
 
       {/* slider container */}
       <div
-        className="transition ease-linear duration-300  flex  gap-6 "
-        style={{ transform: `translateX(-${currentSlider * 428}px)` }}
+        className="ease-linear duration-300 flex gap-[2%]"
+        style={{ transform: `translateX(-${currentSlider * 52}%)` }}
       >
-        {/* slider */}
+        {/* sliders */}
         {sliders.map((slide, inx) => (
           <div
             key={inx}
             className={`${
-              currentSlider === inx ? "h-[580px]" : "h-[480px]"
-            } min-w-[404px] relative`}
+              currentSlider === inx
+                ? "h-[310px] md:h-[480px] lg:h-[580px] duration-200"
+                : "h-[260px] md:h-[380px] lg:h-[480px]"
+            } min-w-[50%] relative`}
           >
             <img src={slide.img} className="w-full h-full" alt="" />
             <div
-              className={`absolute bottom-6 left-6 bg-[#FFFFFFB8] p-14 ${
-                currentSlider === inx ? "block" : "hidden"
+              className={`absolute bottom-2 md:bottom-6 left-3 md:left-6 bg-[#FFFFFFB8] p-4 ${
+                currentSlider === inx
+                  ? "opacity-1 duration-700 transition"
+                  : "opacity-0"
               } `}
             >
-              <h4 className="flex items-center gap-2">
+              <h4 className="flex items-center md:gap-2 text-sm ">
                 {"0" + (inx + 1)}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="2"
+                  className="hidden md:block w-7 h-1"
                   viewBox="0 0 27 2"
                   fill="none"
                 >
@@ -74,7 +81,7 @@ const Slider = () => {
                 </svg>{" "}
                 {slide.tags}
               </h4>
-              <h2 className="text-2xl font-semibold mt-1">Inner Peace</h2>
+              <h2 className="md:text-2xl font-semibold mt-1">Inner Peace</h2>
             </div>
           </div>
         ))}
