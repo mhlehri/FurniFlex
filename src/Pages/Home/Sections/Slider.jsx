@@ -9,10 +9,6 @@ const Slider = () => {
     { img: slide1, tags: "Bed room" },
     { img: slide2, tags: "Living room" },
     { img: slide3, tags: "Drawing room" },
-    { img: slide1, tags: "Drawing room" },
-    { img: slide2, tags: "Drawing room" },
-    { img: slide3, tags: "Drawing room" },
-    { img: slide1, tags: "Drawing room" },
   ];
 
   const nextSlider = () => {
